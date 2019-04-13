@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @font-face {
+      font-family: corexfont;
+      src: url(corexfont.woff);
+  }
+  @font-face {
+    font-family:chaprral;
+    src: url(ChaparralPro-Light.otf);
+  }
+      body {
+        margin: 0;
+        color: #414345;
+      }
+      #navbar{
+        position: absolute;
+        height: 5vw;
+        width: 100%;
+        background-color:rgba(31,34,45,1);
+        color:white;
+      }
+      .navbutton{
+        position: relative;
+        top:40%;
+        font-size: 1.2vw;
+        font-family: chaprral;
+      }
+      #navlogo{
+        position: absolute;
+        height: 5vw;
+        top:0vw;
+        width: 15vw;
+        left:20vw;
+        background-color: rgba(31,34,45,1);
+        overflow:hidden;
+      }
+      @-webkit-keyframes rotating{
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 90s linear infinite;
+        -moz-animation: rotating 90s linear infinite;
+        -ms-animation: rotating 90s linear infinite;
+        -o-animation: rotating 90s linear infinite;
+        animation: rotating 90s linear infinite;
+      }
+      a.navbutton{
+        color: inherit;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+      <div id="navlogo"  >
+        <img src="corexlogo.png" style="position:absolute;width:60%;z-index:1;left:18%;top:35%">
+        <img src="logo-wheel.svg" class="rotating" style="position:absolute;width:70%;left:15%;top:-50%;overflow:hidden;" >
+      </div>
+      <a href="index.html" class="navbutton" style="left:45%;" >About</a>
+      <a href="project.html" class="navbutton" style="left:47.5%;" ><b>Projects </b> </a>
+      <a href="manifesto.html" class="navbutton" style="left:50%;"  >Manifesto </a>
+      <a  href="life6.html" class="navbutton" style="left:52.5%;" >Life  </a>
+      <a href="job.php" class="navbutton" style="left:55%;" >Jobs  </a>
+      <a href="contact.php" class="navbutton"  style="left:57.5%;" >Contact Us  </a>
+    </div>
+    <div style="position:absolute;top:0vw;width:100%;overflow:hidden;height:20vw;z-index:-1;" >
+      <img src="./manifesto/cover1.png" width="100%" >
+    </div>
+    <div style="position:absolute;background-color:white;top:17vw;left:25vw;width:50%;" >
+      <span style="position:relative;font-family:corexfont;font-size:2vw;color:#414345;margin-left:11vw;top:3vw;">Success Story: Mile Hi Companies</span>
+      <video style="margin-left:12vw;margin-top:2vw;"  width="480" height="360" controls>
+        <source src="client3.mp4" type="video/mp4">
+          </video>
+
+
+        <p style="position:relative;top:3vw;font-family:chaprral;font-size:1.2vw;padding-left:4vw;padding-right:4vw;" >
+
+          <span style="font-family:corexfont;color:#ff6060;font-size:1.4vw;" >Challenge</span><br><br>
+          Kristy Taddonio Mullins took the reins of the family business in 2013 with her very aggressive growth goals. In her new role as President, she would shake up the status quo as Mile Hi Companies marked more than a century in business. She planned to open new distribution centers in Dallas and Kansas City, plus build a $22 million bakery with double the production capacity in Denver. Her aim with the larger bakery: produce 5,000 dozen baked items per hour with the capability to bake what clients need, when they need it, in a cost-effective manner.<br><br>
+
+  “Our growth goals for the next 10 years are very aggressive, so it was critical that those we hired show an eagerness to be in a growing organization,” stated Taddonio Mullins. “We needed people with the right skill set and cultural fit. They had to be A-players with ‘stretch,’ who could grow into bigger roles with the company’s growth.”<br><br>
+  <span style="font-family:corexfont;color:#ff6060;font-size:1.4vw;" >Soluchan</span><br><br>
+  Taddonio Mullins sought a strategic partner to help transform the company’s hiring practices and provide efficiencies by driving the entire talent acquisition process from beginning to end. This would enable the executives at Mile Hi to focus instead on their business objectives.<br><br>
+
+“I selected CorEx because they were completely different from our current approach to recruiting,” she explained. “CorEx’s philosophy is about getting to know us first – our vision, our growth plans, our culture, our values, our leadership style and expectations – and then moving forward to discuss our hiring strategy and immediate hiring needs.”<br><br>
+
+She added, “”It wasn’t just about filling jobs. It was a long-term partnership to help us grow.”<br><br>
+
+<span style="font-family:corexfont;color:#ff6060;font-size:1.4vw;" >Results</span><br><br>
+“We had huge success with CorEx,” concluded Taddonio Mullins. “I opened distribution centers in Dallas and Kansas City, plus an entirely new bakery here in Denver because of the high level people who have joined our organization as managers and senior directors. It’s been fantastic.”<br><br>
+
+CorEx proactively sought top talent on behalf of Mile Hi for diverse roles that included a Network/System Administrator, a Director of Information Technology, multiple Operations Managers, multiple Transportation Managers, a Dispatcher, a Transportation Administrative Assistant, and a Safety Manager. Meanwhile, Mile Hi’s three-person HR team was able to manage onsite employee issues, onboarding, training, compensation, and benefits—instead of shifting through resumes and focusing on recruiting.<br><br>
+</p>
+
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  function navdown(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'10vw'},200);
+    $("#navlogo").animate({height:'10vw'},200);
+    $(".rotating").animate({top:'-8%'},200);
+  }
+  function navup(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'5vw'},200);
+    $("#navlogo").animate({height:'5vw'},200);
+    $(".rotating").animate({top:'-50%'},200);
+  }
+  </script>
+</html>

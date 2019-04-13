@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @font-face {
+      font-family: corexfont;
+      src: url(corexfont.woff);
+  }
+  @font-face {
+    font-family:chaprral;
+    src: url(ChaparralPro-Light.otf);
+  }
+      body {
+        margin: 0;
+        color: #414345;
+      }
+      #navbar{
+        position: absolute;
+        height: 5vw;
+        width: 100%;
+        background-color:rgba(31,34,45,1);
+        color:white;
+      }
+      .navbutton{
+        position: relative;
+        top:40%;
+        font-size: 1.2vw;
+        font-family: chaprral;
+      }
+      #navlogo{
+        position: absolute;
+        height: 5vw;
+        top:0vw;
+        width: 15vw;
+        left:20vw;
+        background-color: rgba(31,34,45,1);
+        overflow:hidden;
+      }
+      @-webkit-keyframes rotating{
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 90s linear infinite;
+        -moz-animation: rotating 90s linear infinite;
+        -ms-animation: rotating 90s linear infinite;
+        -o-animation: rotating 90s linear infinite;
+        animation: rotating 90s linear infinite;
+      }
+      a.navbutton{
+        color: inherit;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+      <div id="navlogo"  >
+        <img src="corexlogo.png" style="position:absolute;width:60%;z-index:1;left:18%;top:35%">
+        <img src="logo-wheel.svg" class="rotating" style="position:absolute;width:70%;left:15%;top:-50%;overflow:hidden;" >
+      </div>
+      <a href="index.html" class="navbutton" style="left:45%;" >About</a>
+      <a href="project.html" class="navbutton" style="left:47.5%;" ><b> Projects </b> </a>
+      <a href="manifesto.html" class="navbutton" style="left:50%;"  >Manifesto </a>
+      <a  href="life6.html" class="navbutton" style="left:52.5%;" >Life  </a>
+      <a href="job.php" class="navbutton" style="left:55%;" >Jobs  </a>
+      <a  href="contact.php" class="navbutton"  style="left:57.5%;" >Contact Us  </a>
+    </div>
+    <div style="position:absolute;top:0vw;width:100%;overflow:hidden;height:20vw;z-index:-1;" >
+      <img src="./manifesto/cover1.png" width="100%" >
+    </div>
+    <div style="position:absolute;background-color:white;top:17vw;left:25vw;width:50%;" >
+      <span style="position:relative;font-family:corexfont;font-size:2vw;color:#414345;margin-left:11vw;top:3vw;">Success Story: LINX Multimedia</span>
+      <video style="margin-left:12vw;margin-top:2vw;"  width="480" height="360" controls>
+        <source src="client2.mp4" type="video/mp4">
+          </video>
+
+
+        <p style="position:relative;top:3vw;font-family:chaprral;font-size:1.2vw;padding-left:4vw;padding-right:4vw;" >
+
+          <span style="font-family:corexfont;color:#ff6060;font-size:1.4vw;" >Challenge</span><br><br>
+          “Linx has been on the Inc. 500, 5000 list six times in the last eight years. We have had two years in the company’s 13-year history where we haven’t set a new revenue record,” explained Erik Isernhagen, CEO.<br><br>
+
+Substantial growth is what brought LINX to CorEx. With business booming over the last few years, the pressure to recruit and onboard quality employees was felt throughout the organization.<br><br>
+
+“That kind of growth puts a lot of pressure on staffing, onboarding, recruiting,” he added.<br><br>
+  <span style="font-family:corexfont;color:#ff6060;font-size:1.4vw;" >Soluchan</span><br><br>
+  LINX turned to CorEx to find exceptional talent for their growing organization. They needed to attract the very best auto-visual professionals
+in the Denver metro area and CorEx had a proven record of success. CorEx offered a professional services approach, a proven process, and guaranteed results. With multiple positions to fill, CorEx managed the talent acquisition process from beginning to end, which enabled the executives at LINX to focus on their business objectives.<br><br>
+
+“Candidates are now thoroughly vetted and only the very top are in front of hiring managers.”<br><br>
+
+“One of the biggest things that Talent Trust does, that’s different, is seek a cultural match and a cultural marriage between the candidate and the organiza- tion, even so far as the hiring manager.,” said Isernhagen<br><br>
+
+<span style="font-family:corexfont;color:#ff6060;font-size:1.4vw;" >Results</span><br><br>
+“We’ve been able to hire faster with less wasted time in interviews,” said Isernhagen.<br><br>
+
+CorEx provided top candidates for open positions at LINX. All candidates submitted to the hiring managers had gone through an extensive vetting process for attitude and aptitude — resulting in a great cultural fit. Hiring managers were able to make better decisions faster with the help of CorEx.<br><br>
+
+“I think the secret sauce that Talent Trust has is the cultural match. For us, we’re a services-based organization. The people who do the work have a huge impact, not only on our clients but on each other. It helps define the work environment. I care more about finding an employee who is a cultural match to the organization, vs. the experience. We can train on the skills, but the attitude is key,” he concluded.<br><br>
+</p>
+
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  function navdown(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'10vw'},200);
+    $("#navlogo").animate({height:'10vw'},200);
+    $(".rotating").animate({top:'-8%'},200);
+  }
+  function navup(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'5vw'},200);
+    $("#navlogo").animate({height:'5vw'},200);
+    $(".rotating").animate({top:'-50%'},200);
+  }
+  </script>
+</html>

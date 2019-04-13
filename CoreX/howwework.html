@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @font-face {
+      font-family: corexfont;
+      src: url(corexfont.woff);
+  }
+  @font-face {
+    font-family:chaprral;
+    src: url(ChaparralPro-Light.otf);
+  }
+      body {
+        margin: 0;
+        color: #414345;
+      }
+      #navbar{
+        position: absolute;
+        height: 5vw;
+        width: 100%;
+        background-color:rgba(31,34,45,1);
+        color:white;
+      }
+      .navbutton{
+        position: relative;
+        top:40%;
+        font-size: 1.2vw;
+        font-family: chaprral;
+      }
+      #navlogo{
+        position: absolute;
+        height: 5vw;
+        top:0vw;
+        width: 15vw;
+        left:20vw;
+        background-color: rgba(31,34,45,1);
+        overflow:hidden;
+      }
+      @-webkit-keyframes rotating{
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 90s linear infinite;
+        -moz-animation: rotating 90s linear infinite;
+        -ms-animation: rotating 90s linear infinite;
+        -o-animation: rotating 90s linear infinite;
+        animation: rotating 90s linear infinite;
+      }
+      a.navbutton{
+        color: inherit;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+      <div id="navlogo"  >
+        <img src="corexlogo.png" style="position:absolute;width:60%;z-index:1;left:18%;top:35%">
+        <img src="logo-wheel.svg" class="rotating" style="position:absolute;width:70%;left:15%;top:-50%;overflow:hidden;" >
+      </div>
+      <a href="index.html" class="navbutton" style="left:45%;" >About</a>
+      <a href="project.html" class="navbutton" style="left:47.5%;" >Projects  </a>
+      <a href="manifesto.html" class="navbutton" style="left:50%;"  ><b>Manifesto</b> </a>
+      <a href="life6.html" class="navbutton" style="left:52.5%;" >Life  </a>
+      <a href="job.php" class="navbutton" style="left:55%;" >Jobs  </a>
+      <a href="contact.php" class="navbutton"  style="left:57.5%;" >Contact Us  </a>
+    </div>
+    <div style="position:absolute;top:0vw;width:100%;overflow:hidden;height:20vw;z-index:-1;" >
+      <img src="./manifesto/cover1.png" width="100%" >
+    </div>
+    <div style="position:absolute;background-color:white;top:17vw;left:25vw;width:50%;" >
+      <span style="position:relative;font-family:corexfont;font-size:2vw;color:#414345;margin-left:14vw;top:3vw;">Introducing How We Work</span>
+
+        <p style="position:relative;top:4vw;font-family:chaprral;font-size:1.2vw;padding-left:4vw;padding-right:4vw;" >
+          <span style="font-family:corexfont;color:#ff6060;" >OUR APPROACH</span><br><br>
+          Our objective consists in defeating problems related to self-recognization, by bringing out your hidden treasures in front of you. In order to develop a self-image you are proud of, we organize our approach around three pillars.<br><br>
+          <span style="font-family:corexfont;color:#414345;" >1 • Refining your career-objective</span><br><br>
+
+          Your objectives are closely related to the specificities of your industry and your organization. In order to nurture a relavent talent, we start by closely analyzing your mission, your organization and your needs. Along this phase we work closely with you on the creation process, so that the project progresses in accordance with your objective and the way you want to work.
+<br><br>
+<span style="font-family:corexfont;color:#414345;" >2 • Understanding your potential</span><br><br>
+Our purpose is to analyze and understand the value you bring to tahe table. From the beginning to the end of a project, we work extensively with the you, so that your better self can be reflected in a better way, through our visualization.
+<br><br>
+<span style="font-family:corexfont;color:#414345;" >3 • Serving your inner-self</span><br><br>
+We strongly believe that easy-to-understand humans are the ones that can adapt to different sceneriaos and their own needs. To make something out of yourself, we carefully analyze the training needed, so you can be empowered, as they make your talents, your own.
+<br><br>
+<span style="font-family:corexfont;color:#ff6060;" >OUR METHODOLOGY</span><br><br>
+We have developed a consistent working process revolving around three phases, in order to effectively translate raw talent to one-of-its-kind skill<br><br>
+<span style="font-family:corexfont;color:#414345;" >Phase 1: Immersion</span><br><br>
+<b>Objective</b>: This phase allows us to precisely define the expectations, technical constraints, as well as who the audience types are and what their expectations are. During this phase, we also deeply analyze the talents, in order to fully understand the value brought to the company.<br><br>
+
+<b>Result</b>: At the end of this phase, we can suggest scenarios of work and satisfaction that can aptly meet the expressed needs. Those scenarios are then debated across the next steps of the development. We work alongside our end users to assist with those decisions.
+<br><br>
+<span style="font-family:corexfont;color:#414345;" >Phase 2: Conception</span><br><br>
+<b>Objective:</b> This phase allows us to translate into real worls, the use of your so found talents, and into rules to manage your being. We determine how all the pieces should be put together, and implemented within their domain of  application. We then specify the training processes as well as the technical choices.<br><br>
+
+<b>Result:</b> According to each particular project this phase can lead to a prototype of your full potential.<br><br>
+<span style="font-family:corexfont;color:#414345;" >Phase 3: Development</span><br><br>
+<b>Objective:</b> During the production phase, mamangers and leaders within our team work closely to knit you together.<br><br>
+
+<b>Result</b>: You are now ready to face your new life... Bon voyage!
+</p>
+
+    </div>
+  <img src="./manifesto/areyouready.png" style="width:100%;position:absolute;bottom:-80vw;" >
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  function navdown(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'10vw'},200);
+    $("#navlogo").animate({height:'10vw'},200);
+    $(".rotating").animate({top:'-8%'},200);
+  }
+  function navup(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'5vw'},200);
+    $("#navlogo").animate({height:'5vw'},200);
+    $(".rotating").animate({top:'-50%'},200);
+  }
+  </script>
+</html>

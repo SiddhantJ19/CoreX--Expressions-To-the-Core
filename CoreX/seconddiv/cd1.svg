@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="225px" viewBox="0 0 300 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>__regular</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="232" cy="24" r="3"></circle>
+        <circle id="path-2" cx="3" cy="78" r="3"></circle>
+        <circle id="path-3" cx="114" cy="3" r="3"></circle>
+        <circle id="path-4" cx="165" cy="91" r="3"></circle>
+        <circle id="path-5" cx="249" cy="95" r="3"></circle>
+        <circle id="path-6" cx="289" cy="143" r="3"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="__regular">
+            <g id="Group-2" transform="translate(4.000000, 40.000000)">
+                <path d="M290,143 L249,97" id="Path-244" stroke="#FFD072" stroke-width="3" opacity="0.8"></path>
+                <path d="M289,143 L164,91" id="Path-246" stroke="#C4CDD3" stroke-width="3" opacity="0.8"></path>
+                <path d="M290,143 L230,23" id="Path-247" stroke="#C4CDD3" stroke-width="3" opacity="0.8"></path>
+                <path d="M288,143 L113,3" id="Path-248" stroke="#C4CDD3" stroke-width="3" opacity="0.8"></path>
+                <path d="M3,79 L114,3" id="Path-249" stroke="#59C27B" stroke-width="3" opacity="0.8"></path>
+                <path d="M114,3 L230,24" id="Path-250" stroke="#FFD072" stroke-width="3" opacity="0.8"></path>
+                <path d="M232,24 L3,79" id="Path-251" stroke="#59C27B" stroke-width="3" opacity="0.8"></path>
+                <path d="M289,143 L6,79" id="Path-245" stroke="#FFD072" stroke-width="3" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Oval-134">
+                    <use fill="#717A88" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <circle stroke="#D0D0D0" stroke-width="4" cx="232" cy="24" r="5"></circle>
+                    <circle stroke="#FFFFFF" stroke-width="3.2" cx="232" cy="24" r="4.6"></circle>
+                </g>
+                <g id="Oval-134-Copy">
+                    <use fill="#717A88" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <circle stroke="#D0D0D0" stroke-width="4" cx="3" cy="78" r="5"></circle>
+                    <circle stroke="#FFFFFF" stroke-width="3.2" cx="3" cy="78" r="4.6"></circle>
+                </g>
+                <g id="Oval-134-Copy-2">
+                    <use fill="#717A88" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <circle stroke="#D0D0D0" stroke-width="4" cx="114" cy="3" r="5"></circle>
+                    <circle stroke="#FFFFFF" stroke-width="3.2" cx="114" cy="3" r="4.6"></circle>
+                </g>
+                <g id="Oval-134-Copy-3">
+                    <use fill="#717A88" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <circle stroke="#D0D0D0" stroke-width="4" cx="165" cy="91" r="5"></circle>
+                    <circle stroke="#FFFFFF" stroke-width="3.2" cx="165" cy="91" r="4.6"></circle>
+                </g>
+                <g id="Oval-134-Copy-4">
+                    <use fill="#717A88" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <circle stroke="#D0D0D0" stroke-width="4" cx="249" cy="95" r="5"></circle>
+                    <circle stroke="#FFFFFF" stroke-width="3.2" cx="249" cy="95" r="4.6"></circle>
+                </g>
+                <g id="Oval-134-Copy-5">
+                    <use fill="#717A88" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <circle stroke="#D0D0D0" stroke-width="4" cx="289" cy="143" r="5"></circle>
+                    <circle stroke="#FFFFFF" stroke-width="3.2" cx="289" cy="143" r="4.6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

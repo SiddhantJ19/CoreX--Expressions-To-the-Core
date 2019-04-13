@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+  @font-face {
+    font-family: corexfont;
+    src: url(corexfont.woff);
+}
+@font-face {
+  font-family:chaprral;
+  src: url(ChaparralPro-Light.otf);
+}
+  html,body{
+    padding: 0;
+    margin: 0;
+  	background:#14151a;
+    font-family: corexfont;
+  }
+  #particles-js{
+    margin: 0;
+    z-index: -1;
+    height: 100%;
+  }
+  .foreground{
+    position:absolute;
+
+    z-index:10;
+    color:white;
+  }
+  #logo{
+    top:40%;
+  }
+  #navbar{
+    position: absolute;
+    height: 5vw;
+    width: 100%;
+    background-color:rgba(20,21,26,0.5);
+    color:white;
+  }
+  .navbutton{
+    position: relative;
+    top:40%;
+    font-family: chaprral;
+    font-size: 1.2vw;
+  }
+  #navlogo{
+    position: absolute;
+    height: 5vw;
+    top:0vw;
+    width: 15vw;
+    left:10vw;
+    background-color: rgba(21,20,26,0);
+    overflow:hidden;
+  }
+  @-webkit-keyframes rotating{
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 90s linear infinite;
+    -moz-animation: rotating 90s linear infinite;
+    -ms-animation: rotating 90s linear infinite;
+    -o-animation: rotating 90s linear infinite;
+    animation: rotating 90s linear infinite;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  </style>
+</head>
+
+
+<body>
+
+
+<div id="particles-js">
+  <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+    <a href="index.html" class="navbutton" style="left:30%;" ><b>About</b></a>
+    <a  href="project.html" class="navbutton" style="left:33.3%;" >Projects  </a>
+    <a href="manifesto.html" class="navbutton" style="left:36.6%;"  >Manifesto  </a>
+    <a href="life6.html" class="navbutton" style="left:39.9%;" >Life  </a>
+    <a href="job.php" class="navbutton" style="left:42.2%;" >Jobs </a>
+    <a href="contact.php" class="navbutton"  style="left:45%;" >Contact Us  </a>
+  </div>
+
+  <img id="logo" class="foreground" src="corexlogo.png" style="width:32%;margin-left:33%;top:18.65vw">
+  <p id="tagline" class="foreground" style="margin-left:35.3%;top:25.58vw;font-size:2.8vw;font-family:chaprral;">Expressions&nbsp; to the&nbsp; corE</p>
+  <p id="textcontainer" class="foreground" style="font-size:2.15vw;margin-left:30%;font-family:chaprral;top:21.32vw;color:white;opacity:0;" > We help people <span id="flyin" style="font-family:corexfont;font-weight:bold;position:relative;bottom:-60px;opacity:0;" >express </span>themselves</p>
+  <p id="text2" class="foreground" style="font-size:2.15vw;margin-left:13.46vw;font-family:corexfont;top:43.07vw;color:white;opacity:0;" >We connect potential employees to employers <span style="font-family:chaprral;" ><br>through useful and relavent interfaces<span> </p>
+  <p id="text3" class="foreground" style="font-size:2.15vw;margin-left:13.46vw;font-family:chaprral;top:21.53vw;color:white;opacity:0;">Thats how we <span id="text3flyin" style="font-family:corexfont;" >tell stories of your experiences<span></p>
+  <p id="text4" class="foreground" style="font-size:2.36vw;margin-left:13.46vw;top:37.69vw;color:white;opacity:0;" ><span style="font-family:chaprral;font-style:italic;">Ultimately,<br></span>that's how we make sense<br>of a world increasingly shaped<br>by career decisions.</p>
+  <p id="text5a" class="foreground" style="text-align:center;left:33%;font-size:2.04vw;font-family:chaprral;top:37.69vw;color:white;opacity:0;" >The upcoming era of smart hirings<br>will disrupt the way people are recruited</p>
+  <p id="text5b" class="foreground" style="text-align:center;left:34%;font-size:2.26vw;top:37.69vw;color:white;opacity:0;" >We are taking an active part in<br>the revolution of hirings.</p>
+  <p id="next" class="foreground" style="margin-left:42%;top:48.46vw;" >Next</p>
+  <img  id="navarrow" class="foreground" src="navarrow.png" style="margin-left: 45%;height:2.63vw;width:2.63vw;top:48.46vw;" onclick="mainAnimate()">
+  <img  id="skip" class="foreground" src="skip.png" style="margin-left:49%;height:2.63vw;width:2.63vw;top:48.46vw;" onclick="removeAndContinue()">
+  <p id="skiptext" class="foreground" style="margin-left:53%;top:48.46vw;" >Skip</p>
+</div>
+<div id="wrapper" style="display:none;position:absolute;height:100%;width:100%;opacity:0;" >
+  <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+    <a href="index.html" class="navbutton" style="left:30%;" ><b>About</b></a>
+    <a  href="project.html" class="navbutton" style="left:33.3%;" >Projects  </a>
+    <a href="manifesto.html" class="navbutton" style="left:36.6%;"  >Manifesto  </a>
+    <a href="life6.html" class="navbutton" style="left:39.9%;" >Life  </a>
+    <a href="job.php" class="navbutton" style="left:42.2%;" >Jobs </a>
+    <a href="contact.php" class="navbutton"  style="left:45%;" >Contact Us  </a>
+  </div>
+
+<div id="finalsvgcontainer"  style="position:fixed;text-align:center;display:inline;width:100%;top:8vw;left:0;height:100%;min-height:100%;z-index:-101;opacity:0.7;" >
+  <br><img class="rotating" src="logo-wheel.svg" style="width:30%;">
+</div>
+<div id="finallogocontainer" style="position:fixed;display:inline;width:100%;top:21vw;left:0;height:100%;min-height:100%;z-index:-100;" >
+<img src="corexlogo.png" id="finallogo" style="position:relative;width:21%;left:39%;opacity:1">
+
+</div>
+<div id="finalheadingcontainer" style="position:relative;background-color:rgba(20,21,26,0.95);height:100%;min-height:100%;top:40.38vw;width:100%;z-index:1000;"   >
+  <br><p id="finalheading" style="font-family:chaprral;font-size:2.47vw;color:white;text-align:center;opacity:1;" >We engineer Potential Employee-Employer interactions</p>
+  <div style="font-size:1.07vw;color:white;margin-left:23%;opacity:1;height:80%;width:25%;float:left;">
+    <p id="finaltextleft"  >
+      <span >We connect potential employees to<br>employers through our special skillset:<br><br><span>
+      			-- Smart position hunt algorithms<br><br>
+      			-- Company deep assets<br><br>
+      			-- Creative illustrations<br><br>
+      			-- Influnece on hirings<br>
+    </p>
+  </div>
+
+  <div id="finaltextright" style="color:white;font-family:chaprral;font-size:0.96vw;position:relative;top:1.50vw;width:80%" >
+    <p> We help people understand, share and present.<br><br>
+
+		We translate data into experiences, to share narratives, support a visualisable career objective, and make sense of a worldincreasingly shaped by your small decisions. We design useful, relevant talent bundles with our workforce, which revolves around both client and employer needs.<br><br>
+
+		Our promotions are a game changer, in that they introduce our clients to a strategy that makes the most out of themsleves.<br><br>
+
+		Our core competencies relate to talent-based promotion, skill-specefic people networks, as well as experience visualization.<br><br>
+
+		Within CorEx, we firmly believe that the upcoming era of rich and smart hirings will disrupt the way recruitment is conventionally 			done. Through our works, we take an active part in the revolution of skillset.</p>
+  </div>
+
+</div>
+</div>
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="particles.js"></script>
+<script>
+function removeAndContinue(){
+  setTimeout(function(){
+    $("#particles-js").animate({opacity:'0'},500)
+    setTimeout(function(){
+      $("#particles-js").remove();
+      $("#wrapper").css({display:'inline'});
+      $("#wrapper").animate({opacity:'1'},1000);
+    },550)
+
+  },1000);
+
+}
+function slide5(){
+  setTimeout(function() {
+    $("#text5a").animate({top:'21.53vw',opacity:'1'},700);
+    setTimeout(function(){
+      $("#text5a").animate({fontSize:'1.72vw',top:'18.84vw',left:'36%'},500);
+      $("#text5b").animate({top:'24.23vw',opacity:'1'},500);
+      setTimeout(function(){
+        $("#text5a").animate({opacity:'0'},500);
+        $("#text5b").animate({opacity:'0'},{duration:500,done :removeAndContinue()});
+      },5000)
+    },3000);
+  },700);
+}
+function slide4(){
+  setTimeout(function(){
+    $("#text4").animate({top:'21.53vw',opacity:'1'},"slow");
+    setTimeout(function(){
+        $("#text4").animate({opacity:'0'},{duration:500,done: slide5()})
+    },5000);
+
+  },1000)
+}
+function slide3(){
+  setTimeout(function() {
+    $("#text3").animate({opacity:'1'},"slow");
+    setTimeout(function(){
+        $("#text3flyin").animate({opacity:'0'},"slow");
+        setTimeout(function(){
+          $("#text3flyin").html("support your growth");
+          $("#text3flyin").animate({opacity:'1'},"slow");
+          setTimeout(function(){
+            $("#text3").animate({opacity:'0'},{duration:700,done: slide4()})
+          },2000);
+        },700)
+
+    },2000);
+
+  },1000);
+}
+function slide2() {
+  setTimeout(function(){
+      pJSDom[0].pJS.particles.line_linked.enable = true;
+    $("#text2").animate({top:'21.53vw',opacity:'1'},{duration:700});
+    setTimeout(function() {
+      $("#text2").animate({opacity:'0'},{duration:500,done: slide3()})
+    },3000)
+  },1000);
+
+}
+function slide1(){
+
+    setTimeout(function(){
+      $("#textcontainer").animate({opacity:'1'},"slow");
+      $("#flyin").animate({bottom: '0px',opacity:'1'},500);
+      setTimeout(function() {
+        $("#flyin").animate({opacity:'0'},500,function() {
+        $("#flyin").html("present&nbsp;");
+        $("#flyin").css({"bottom":"-60px","opacity":"0"});
+        $("#flyin").animate({bottom:'0px',opacity:'1'},500);
+        setTimeout(function() {
+            $("#flyin").animate({opacity:'0'},500,function() {
+            $("#flyin").html("understand&nbsp;");
+            $("#flyin").css({"bottom":"-60px","opacity":"0"});
+            $("#flyin").animate({bottom:'0px',opacity:'1'},500);
+            setTimeout(function(){
+                $("#textcontainer").animate({opacity:'0'},{duration:500,done: slide2()});
+            },2000)
+
+
+            });
+
+
+          },3000);
+      });
+
+
+    },3000);
+    },1500)
+
+
+
+};
+function mainAnimate(){
+  $("#navarrow").animate({opacity:'0'},"slow");
+  $("#skip").animate({opacity:'0'},"slow");
+  $("#next").animate({opacity:'0'},"slow");
+  $("#skiptext").animate({opacity:'0'},"slow");
+  $("#logo").animate({top:'0%',opacity:'0'},{duration:1000,done: slide1()});
+  $("#tagline").animate({opacity:'0'},"slow");
+  setTimeout(function(){
+    $("#tagline").remove();
+    $("#logo").remove();
+    $("#navarrow").remove();},800);
+}
+function navdown(){
+  $("#navbar").stop();
+  $("#navlogo").stop();
+  $("#navbar").animate({height:'10vw'},200);
+  $("#navlogo").animate({height:'10vw'},200);
+}
+function navup(){
+  $("#navbar").stop();
+  $("#navlogo").stop();
+  $("#navbar").animate({height:'5vw'},200);
+  $("#navlogo").animate({height:'5vw'},200);
+}
+particlesJS('particles-js',
+
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 1000
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+
+);
+</script>
+
+
+
+
+</html>

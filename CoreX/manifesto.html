@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @font-face {
+      font-family: corexfont;
+      src: url(corexfont.woff);
+  }
+  @font-face {
+    font-family:chaprral;
+    src: url(ChaparralPro-Light.otf);
+  }
+      body {
+        margin: 0;
+      }
+      .color1{color:#cccccc;}
+      .color2{color:#b3b3b3;}
+      #animationcontainter{
+        position: absolute;
+        opacity:0;
+
+        margin-top:16vw;
+        margin-left:41vw;
+        z-index: -110;
+
+        font-family: corexfont;
+      }
+      #topcontainer{
+        position: absolute;
+        width: 100%;
+        height: 83vh;
+        z-index: -2;
+        background-color: #091217;
+      }
+      #vista{
+        top: 17vw;
+        position: absolute;
+        font-family: corexfont;
+        color:white;
+        font-size: 4.8vw;
+        left: 30%;
+
+
+      }
+      #our{
+        position: absolute;
+        font-family: corexfont;
+        color:white;
+        font-size: 1.2vw;
+        margin-left: 48vw;
+        margin-top: 16vw;
+      }
+      #table{
+        position: absolute;
+        font-family: chaprral;
+        color:white;
+        font-size: 1.1vw;
+        margin-left: 24vw;
+        margin-top: 32vw;
+      }
+      #description{
+        top: 23vw;
+        position: absolute;
+        left:32.3%;
+        color: white;
+      }
+      .sidetext{
+
+        font-family: chaprral;
+        font-size: 1.05vw;
+        position: absolute;
+        top:18vw;
+        left:63vw;
+        color: white;
+      }
+      #navbar{
+        position: absolute;
+        height: 5vw;
+        width: 100%;
+        background-color:rgba(31,34,45,0.3);
+        color:white;
+      }
+      .navbutton{
+        position: relative;
+        top:40%;
+        font-size: 1.2vw;
+        font-family: chaprral;
+      }
+      #navlogo{
+        position: absolute;
+        height: 5vw;
+        top:0vw;
+        width: 15vw;
+        left:20vw;
+        background-color: rgba(21,20,26,0);
+        overflow:hidden;
+      }
+      @-webkit-keyframes rotating{
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 90s linear infinite;
+        -moz-animation: rotating 90s linear infinite;
+        -ms-animation: rotating 90s linear infinite;
+        -o-animation: rotating 90s linear infinite;
+        animation: rotating 90s linear infinite;
+      }
+      a.navbutton{
+        color: inherit;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+      <div id="navlogo"  >
+        <img src="corexlogo.png" style="position:absolute;width:60%;z-index:1;left:18%;top:35%">
+        <img src="logo-wheel.svg" class="rotating" style="position:absolute;width:70%;left:15%;top:-50%;overflow:hidden;" >
+      </div>
+      <a href="index.html" class="navbutton" style="left:45%;" >About</a>
+      <a href="project.html" class="navbutton" style="left:47.5%;" >Projects  </a>
+      <a href="manifesto.html" class="navbutton" style="left:50%;"  ><b>Manifesto</b> </a>
+      <a href="life6.html" class="navbutton" style="left:52.5%;" >Life  </a>
+      <a href="job.php" class="navbutton" style="left:55%;" >Jobs  </a>
+      <a href="contact.php" class="navbutton"  style="left:57.5%;" >Contact Us  </a>
+    </div>
+    <div id="topcontainer">
+      <div id="our">
+        O U R
+      </div>
+      <div id="vista">
+          VISTA MANIFESTO<br>
+
+    </div>
+    <div id="description" style="text-align:center;font-size:1.2vw;font-family:chaprral;opacity:0.7;" >
+    CorEx has been self-funded since its creation in 2017<br>
+    which provides us with the freedom to implement our processes and vision
+    </div>
+    <div id="animationcontainter" >
+      <img src="black.png" id="image" style="width:15vw;"  >
+    </div>
+    <div id="Vtext" class="sidetext" style="opacity:0;" >
+      <span style="color:#cbaa07;font-size:2vw;" >Visualize</span><br>
+      Through our <br>visualizations, we empower <br>our users, to decode and<br> process their data<br> and experience, in order<br> to support decision making.
+    </div>
+    <div id="Itext" class="sidetext" style="opacity:0;" >
+      <span style="color:#7ca33a;font-size:2vw;" >Involve</span><br>
+      Through advanced<br>interactions, our<br> visualizations help users<br>make the stories their own,<br>in a way that improves<br> comprehension and<br> appeal.
+    </div>
+    <div id="Stext" class="sidetext" style="opacity:0;" >
+      <span style="color:#27a761;font-size:2vw;" >Surround</span><br>
+      Our works can also take<br> the form of more ambient <br>experiences, which<br> immerse clients and unfold<br> the stories progressively <br>before their eyes.
+    </div>
+    <div id="Ttext" class="sidetext" style="opacity:0;" >
+      <span style="color:#0b7a67;font-size:2vw;" >Trust</span><br>
+      Our works establish a<br> relationship of trust with<br> our users. Our interfaces<br> are not impenetrable black<br>boxes, they help<br>understand the logic of the <br>underlying social engineering.
+    </div>
+    <div id="Atext" class="sidetext" style="opacity:0;" >
+      <span style="color:#02aebc;font-size:2vw;" >Accompany</span><br>
+      Our interfaces grant users<br> with a sense of <br>responsibility in their daily<br> environment, namely<br> through advanced <br>dashboards and connected<br>client networks.
+    </div>
+    <table id="table" onclick="moveVista()"  >
+      <tr>
+        <td style="color:#cbaa07;" onclick="Vanimate()" >
+          Visualize<br>
+          <span style="color:white;font-size:1vw;position:relative;bottom:-0.7vw;">
+          We invent a new<br>visual language to<br>translate experience<br>into information<br><br><span style="color:white;">--More<br>
+        </span>
+      </td>
+        <td style="color:#7ca33a;padding-left:3vw;" onclick="Ianimate()" >
+        Involve<br>
+        <span style="color:white;font-size:1vw;position:relative;bottom:-0.7vw;">
+        We enable recruiters to<br>take data into their<br>hands and explore it<br><br><br><span style="color:white;">--More<br>
+        </span>
+      </td>
+      </td>
+      <td style="color:#27a761;padding-left:3vw;" onclick="Sanimate()" >
+        Surround<br>
+        <span style="color:white;font-size:1vw;position:relative;bottom:-0.7vw;">
+        We focus the<br>attention of recruiters on<br>what is valuable to<br>them<br><br><span style="color:white;">--More<br>
+        </span>
+      </td>
+      <td style="color:#0b7a67;padding-left:3vw;" onclick="Tanimate()" >
+        Trust<br>
+        <span style="color:white;font-size:1vw;position:relative;bottom:-0.7vw;">
+        We help you<br>prepare yourself<br>in facing you<br>  <br><br><span style="color:white;">--More<br>
+        </span>
+      </td>
+      <td style="color:#02aebc;padding-left:3vw;" onclick="Aanimate()" >
+        Accompany<br>
+        <span style="color:white;font-size:1vw;position:relative;bottom:-0.7vw;">
+        We extract more value<br>from your skills to support<br>and guide everyday<br>actions.<br><br><span style="color:white;">--More<br>
+        </span>
+      </td>
+        </tr>
+    </table>
+</div>
+<p style="font-family:chaprral;font-size:3vw;position:absolute;top:84vh;left:30vw;" > Working with us - What to expect   </p>
+<a href="faq.html">
+<div  id="cd1" class="cd" onmouseover="slidein(cd1slide,cd1displaydiv)" onmouseout="slideout(cd1slide,cd1displaydiv)"  style="position: absolute;height:20vw;top:50vw;left:13vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./manifesto/faq.svg" style="height:100%;width:100%" >
+  <div id="cd1slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: #414345;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW MORE</span>
+  </div>
+  <div id="cd1displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1vw;position:relative;left:21%;top:22%;color:#414345; " >Frequently Asked Questions</span>
+  </div>
+
+</div>
+</a>
+<a href="beforecontacting.html"
+<div  id="cd2" class="cd" onmouseover="slidein(cd2slide,cd2displaydiv)" onmouseout="slideout(cd2slide,cd2displaydiv)" style="position: absolute;height:20vw;top:50vw;left:37vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./manifesto/interaction.svg" style="height:100%;width:100%" >
+  <div id="cd2slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: #414345;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW MORE</span>
+  </div>
+  <div id="cd2displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:21%;top:20%;color:#414345; " >Before Contacting us</span>
+  </div>
+</div>
+</a>
+<a href="howwework.html">
+<div  id="cd3" class="cd" onmouseover="slidein(cd3slide,cd3displaydiv)" onmouseout="slideout(cd3slide,cd3displaydiv)" style="position: absolute;height:20vw;top:50vw;left:62vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./manifesto/123.svg" style="height:100%;width:100%" >
+  <div id="cd3slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color:#414345;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW MORE</span>
+  </div>
+  <div id="cd3displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:21%;top:20%;color:#414345; " >How We Work</span>
+  </div>
+</div>
+</a>
+<div style="font-family:chaprral;position:absolute;top:75vw;background-color:#14151a;width:100%;height:12vw;" >
+  <ul style="margin-left:10vw;position:absolute;list-style: none;">
+          <li>
+              <h1 class="color1">CorEx</h1>
+              <a href="#!/en/mentions-legales"><p  class="color2">Terms &amp; conditions</p></a>
+              <p  class="color2">©ITWS1 FALL-2017</p>
+            </li>
+          </ul>
+  <ul style="margin-left:35vw;position:absolute;list-style: none;">
+    <li>
+      <h3  class="color1">Visit Us</h3>
+      <a href="https://www.google.com/maps/d/viewer?mid=19JTfJhly2iU5ydLGBP4sVLwWmSU&hl=en_US" target="_blank"><p  class="color2">Indian Institute of </p></a>
+        <p class="color2">  Information Technology,<br><br>
+            SriCity , India</p>
+    </li>
+  </ul>
+    <ul style="margin-left:55vw; position:absolute;list-style: none;">
+      <li>
+        <h3  class="color1">Contact Us</h3>
+        <a href="mailto:contact@corex.com?Subject=Hey%20There!" class="color2" target="_top">contact@corex.com</a>
+      </li>
+    </ul>
+    <ul style="margin-left:75vw;position:absolute;list-style: none;">
+      <li>
+      <h3 class="color1">Follow Us</h3>
+      <a href="http://twitter.com" target="_blank"><p class="color2">Twitter </p></a>
+      <a href="http://www.facebook.com" target="_blank"><p  class="color2">Facebook</p></a>
+      <a href="http://www.linkedin.com" target="_blank"><p  class="color2">LinkedIn</p></a>
+    </li>
+  </ul>
+
+
+</div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var prevLetter=0;
+      function moveVista(){
+        $("#our").animate({marginTop:'6vw'},700);
+        $("#vista").animate({fontSize:'2.8vw',top:'7vw',left:'38.5%'},700);
+        $("#description").animate({top:'12vw'},700);
+        $("#animationcontainter").animate({opacity:'1'},400);
+
+}
+function Vanimate(){
+  $("#image").animate({opacity:'0'},500);
+  $(".sidetext").animate({opacity:'0',top:'20vw'},500);
+  setTimeout(function(){
+    $("#image").css("opacity","1");
+    $("#image").attr("src","V.gif");
+    $("#Vtext").animate({opacity:'1',top:'18vw'},500);
+    setTimeout(function() {
+      $("#image").attr("src","Vstatic.png");
+    },1000);
+  },550);
+};
+function Ianimate(){
+  $("#image").animate({opacity:'0'},500);
+  $(".sidetext").animate({opacity:'0',top:'20vw'},500);
+  setTimeout(function(){
+    $("#image").css("opacity","1");
+    $("#image").attr("src","I.gif");
+    $("#Itext").animate({opacity:'1',top:'18vw'},500);
+    setTimeout(function() {
+      $("#image").attr("src","Istatic.png");
+    },1000);
+  },550);
+};
+function Sanimate(){
+  $("#image").animate({opacity:'0'},500);
+  $(".sidetext").animate({opacity:'0',top:'20vw'},500);
+  setTimeout(function(){
+    $("#image").css("opacity","1");
+    $("#image").attr("src","S.gif");
+    $("#Stext").animate({opacity:'1',top:'18vw'},500);
+    setTimeout(function() {
+      $("#image").attr("src","Sstatic.png");
+    },1000);
+  },550);
+};
+function Tanimate(){
+  $("#image").animate({opacity:'0'},500);
+  $(".sidetext").animate({opacity:'0',top:'20vw'},500);
+  setTimeout(function(){
+    $("#image").css("opacity","1");
+    $("#image").attr("src","T.gif");
+    $("#Ttext").animate({opacity:'1',top:'18vw'},500);
+    setTimeout(function() {
+      $("#image").attr("src","Tstatic.png");
+    },1000);
+  },550);
+};
+function Aanimate(){
+  $("#image").animate({opacity:'0'},500);
+  $(".sidetext").animate({opacity:'0',top:'20vw'},500);
+  setTimeout(function(){
+    $("#image").css("opacity","1");
+    $("#image").attr("src","A.gif");
+    $("#Atext").animate({opacity:'1',top:'18vw'},500);
+    setTimeout(function() {
+      $("#image").attr("src","Astatic.png");
+    },1000);
+  },550);
+};
+function navdown(){
+  $("#navbar").stop();
+  $("#navlogo").stop();
+  $(".rotating").stop();
+  $("#navbar").animate({height:'10vw'},200);
+  $("#navlogo").animate({height:'10vw'},200);
+  $(".rotating").animate({top:'-8%'},200);
+}
+function navup(){
+  $("#navbar").stop();
+  $("#navlogo").stop();
+  $(".rotating").stop();
+  $("#navbar").animate({height:'5vw'},200);
+  $("#navlogo").animate({height:'5vw'},200);
+  $(".rotating").animate({top:'-50%'},200);
+}
+function slidein(slide,displaydiv){
+ $(slide).stop();
+ $(displaydiv).stop();
+ $(slide).animate({opacity:'1',top:'80%'},200);
+ $(displaydiv).animate({top:'60%'},200);
+}
+function slideout(slide,displaydiv){
+ $(slide).stop();
+ $(displaydiv).stop();
+ $(slide).animate({opacity:'0',top:'100%'},200);
+ $(displaydiv).animate({top:'80%'},200);
+}
+  </script>
+</html>

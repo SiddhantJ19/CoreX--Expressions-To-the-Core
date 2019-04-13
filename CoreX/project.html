@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+    <style>
+    @font-face {
+      font-family: corexfont;
+      src: url(corexfont.woff);
+  }
+  @font-face {
+    font-family:chaprral;
+    src: url(ChaparralPro-Light.otf);
+  }
+      body{
+        margin:0;
+        background-color: #ffffff;
+      }
+      .color1{color:#cccccc;}
+      .color2{color:#b3b3b3;}
+      #companytable{
+        position: absolute;
+        left:10vw;
+        top:160vw;
+        float:left;
+        width: 55vw;
+        font-family: chaprral;
+      }
+
+      #companytable2{
+        font-family: chaprral;
+        position:absolute;
+        left:67vw;
+        top:160vw;
+        height:64vw;
+        width:32vw;
+        color:#717171;
+        background-color:#f7f7f7;
+        font-size:20px;
+        padding-left:40px;
+      }
+        td{
+          height:10vw;
+          width:20vw;
+        }
+        th{
+          height:9vw;
+          color:#c1c1c1;
+        }
+      .logoCom{
+        border: 1px solid white;
+      }
+      .logoCom:hover{
+        border: 1px solid grey;
+      }
+      #navbar{
+        position: absolute;
+        height: 5vw;
+        width: 100%;
+        background-color:rgba(31,34,45,1);
+        color:white;
+      }
+      .navbutton{
+        position: relative;
+        top:40%;
+        font-size: 1.2vw;
+        font-family: chaprral;
+      }
+      #navlogo{
+        position: absolute;
+        height: 5vw;
+        top:0vw;
+        width: 15vw;
+        left:20vw;
+        background-color: rgba(21,20,26,0);
+        overflow:hidden;
+      }
+      @-webkit-keyframes rotating{
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 90s linear infinite;
+        -moz-animation: rotating 90s linear infinite;
+        -ms-animation: rotating 90s linear infinite;
+        -o-animation: rotating 90s linear infinite;
+        animation: rotating 90s linear infinite;
+      }
+      a.navbutton{
+        color: inherit;
+        text-decoration: none;
+      }
+      .slide{
+        position: absolute;
+        height: 15%;
+        width: 100%;
+        top:100%;
+
+        z-index: 1;
+        opacity: 0;
+
+      }
+
+      .displaydiv{
+        position: absolute;
+        height: 20%;
+        width: 100%;
+        top:80%;
+        z-index: 1;
+
+      }
+      #slide1{
+        background-color:#eecd00;
+        }
+      #slide2{
+        background-color: #00a9b7;
+      }
+      #slide3{
+        background-color: #00e667;
+
+      }
+      #displaydiv1{
+        background-color: rgba(238,205,0,0.7);
+      }
+      #displaydiv2{
+        background-color: rgba(0,169,183,0.7);
+      }
+      #displaydiv3{
+        background-color: rgba(0,230,103  ,0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+      <div id="navlogo"  >
+        <img src="corexlogo.png" style="position:absolute;width:60%;z-index:1;left:18%;top:35%">
+        <img src="logo-wheel.svg" class="rotating" style="position:absolute;width:70%;left:15%;top:-50%;overflow:hidden;" >
+      </div>
+      <a href="index.html" class="navbutton" style="left:45%;" >About</a>
+      <a href="project.html" class="navbutton" style="left:47.5%;" ><b>Projects</b>  </a>
+      <a href="manifesto.html" class="navbutton" style="left:50%;"  >Manifesto </a>
+      <a href="life6.html" class="navbutton" style="left:52.5%;" >Life  </a>
+      <a href="job.php" class="navbutton" style="left:55%;" >Jobs  </a>
+      <a href="contact.php" class="navbutton"  style="left:57.5%;" >Contact Us  </a>
+    </div>
+        <a href="client3.html">
+          <div class="firstdivcontainter" style="position:absolute;top:5vw;left:5vw;width:30vw;height:30vw;overflow:hidden;z-index:-1;" onmouseover="slidein1()" onmouseout="slideout1()" >
+            <img class="firstdiv" src="picA.png" style="position:relative;top:0vw;left:-4vw;width:120%;" >
+            <div id="slide1" class="slide" >
+              <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >View Success Story</span>
+            </div>
+            <div id="displaydiv1" class="displaydiv" >
+              <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:21%;top:30%;color:#414345; " >Client: Mile Hi Companies</span>
+            </div>
+          </div>
+        </a>
+        <a href="client1.html">
+          <div class="firstdivcontainter" style="position: absolute;top:5vw;left:35vw;width:30vw;height:30vw;overflow:hidden;z-index:-1;" onmouseover="slidein2()" onmouseout="slideout2()">
+            <img class="firstdiv" src="picB.png" style="position:relative;top:0vw;left:-4vw;width:120%"  >
+            <div id="slide2" class="slide" >
+              <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >View Success Story</span>
+            </div>
+            <div id="displaydiv2" class="displaydiv" >
+              <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:30%;top:30%;color:#414345; " >Client: Mercury</span>
+            </div>
+          </div>
+        </a>
+        <a href="client2.html">
+          <div class="firstdivcontainter" style="position: absolute;top:5vw;left:65vw;width:30vw;height:30vw;overflow:hidden;z-index:-1;"  onmouseover="slidein3()" onmouseout="slideout3()" >
+            <img class="firstdiv" src="picC.png" style="position:relative;top:0vw;left:-4vw;width:120%"  >
+            <div id="slide3" class="slide" >
+              <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >View Success Story</span>
+            </div>
+            <div id="displaydiv3" class="displaydiv" >
+              <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:23%;top:30%;color:#414345; " >Client: LINX Multimedia</span>
+            </div>
+          </div>
+        </a>
+
+        <span style="font-family:chaprral;position:absolute;top:40vw;text-align:center;width:100%;" >
+
+          <span style="font-size:3vw;color:#333542 ">Discover our latest projects</span>
+
+        </span>
+<br>
+<span style="font-family:chaprral;font-weight:bold" >
+        <a  style="position:absolute;left:15vw;top:50vw; font-size:1.5vw; color:grey" >Filter by:</a>
+        <a  onclick="allin()" style="position:absolute;left:25vw;top:50vw; font-size:1.5vw; color:#12151A" >All(15)</a>
+        <a  onclick="cd()" style="position:absolute;left:32vw;top:50vw; font-size:1.5vw;color:#ffcc00">Campus Drives(4) </a>
+        <a  onclick="sw()" style="position:absolute;left:47vw;top:50vw; font-size:1.5vw;color:#00cc88">Skill Workshops(4)</a>
+        <a  onclick="cc()" style="position:absolute;left:64vw;top:50vw; font-size:1.5vw;color:#00e6e6">Career Counselling(4)</a>
+        <a  onclick="mi()" style="position:absolute;left:80vw;top:50vw; font-size:1.5vw;color:#739900">Mock interviews(3)</a>
+</span>
+<br><br><br><br>
+<div  id="cd1" class="cd" onmouseover="slidein(cd1slide,cd1displaydiv)" onmouseout="slideout(cd1slide,cd1displaydiv)" style="position: absolute;height:20vw;top:55vw;left:3vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cd1.svg" style="height:100%;width:100%" >
+  <div id="cd1slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: rgba(255,165,0,1);z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cd1displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:21%;top:20%;color:#414345; " >CAMPUS DRIVE 1</span>
+  </div>
+</div>
+<div  id="cd2" class="cd" onmouseover="slidein(cd2slide,cd2displaydiv)" onmouseout="slideout(cd2slide,cd2displaydiv)" style="position: absolute;height:20vw;top:55vw;left:27vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cd2.svg" style="height:100%;width:100%" >
+  <div id="cd2slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: rgba(255,165,0,1);z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cd2displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:21%;top:20%;color:#414345; " >CAMPUS DRIVE 2</span>
+  </div>
+</div>
+<div  id="cd3" class="cd" onmouseover="slidein(cd3slide,cd3displaydiv)" onmouseout="slideout(cd3slide,cd3displaydiv)" style="position: absolute;height:20vw;top:55vw;left:52vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cd3.svg" style="height:100%;width:100%" >
+  <div id="cd3slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: rgba(255,165,0,1);z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cd3displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:21%;top:20%;color:#414345; " >CAMPUS DRIVE 3</span>
+  </div>
+</div>
+<div  id="cd4" class="cd" onmouseover="slidein(cd4slide,cd4displaydiv)" onmouseout="slideout(cd4slide,cd4displaydiv)" style="position: absolute;height:20vw;top:55vw;left:77vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cd4.svg" style="width:100%;" >
+  <div id="cd4slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: rgba(255,165,0,1);z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cd4displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:21%;top:20%;color:#414345; " >CAMPUS DRIVE 4</span>
+  </div>
+</div>
+<div  id="sw1" class="sw" onmouseover="slidein(sw1slide,sw1displaydiv)" onmouseout="slideout(sw1slide,sw1displaydiv)" style="position: absolute;height:20vw;top:80vw;left:3vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/sw1.png" style="width:100%;" >
+  <div id="sw1slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color:#00cc88;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="sw1displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:16%;top:20%; color:#414345;" >SKILLS WORKSHOP 1</span>
+  </div>
+</div>
+<div  id="sw2" class="sw" onmouseover="slidein(sw2slide,sw2displaydiv)" onmouseout="slideout(sw2slide,sw2displaydiv)" style="position: absolute;height:20vw;top:80vw;left:27vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/sw2.png" style="width:100%;" >
+  <div id="sw2slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color:#00cc88;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="sw2displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:16%;top:20%;color:#414345; " >SKILLS WORKSHOP 2</span>
+  </div>
+</div>
+<div  id="sw3" class="sw"  onmouseover="slidein(sw3slide,sw3displaydiv)" onmouseout="slideout(sw3slide,sw3displaydiv)" style="position: absolute;height:20vw;top:80vw;left:52vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/sw3.png" style="width:100%;" >
+  <div id="sw3slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: #00cc88;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="sw3displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:16%;top:20%;color:#414345; " >SKILLS WORKSHOP 3</span>
+  </div>
+</div>
+<div  id="sw4" class="sw" onmouseover="slidein(sw4slide,sw4displaydiv)" onmouseout="slideout(sw4slide,sw4displaydiv)" style="position: absolute;height:20vw;top:80vw;left:77vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/sw4.svg" style="height:100%;" >
+  <div id="sw4slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color:#00cc88;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="sw4displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:16%;top:20%; color:#414345;" >SKILLS WORKSHOP 4</span>
+  </div>
+</div>
+<div  id="cc1" class="cc"  onmouseover="slidein(cc1slide,cc1displaydiv)" onmouseout="slideout(cc1slide,cc1displaydiv)" style="position: absolute;height:20vw;top:105vw;left:3vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cc1.svg" style="width:100%" >
+  <div id="cc1slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: #00e6e6;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cc1displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:7%;top:20%; color:#414345;" >CAREER COUNSELLING 1</span>
+  </div>
+</div>
+<div  id="cc2" class="cc" onmouseover="slidein(cc2slide,cc2displaydiv)" onmouseout="slideout(cc2slide,cc2displaydiv)" style="position: absolute;height:20vw;top:105vw;left:27vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cc2.svg" style="width:100%" >
+  <div id="cc2slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color:#00e6e6;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cc2displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:7%;top:20%;color:#414345; " >CAREER COUNSELLING 2</span>
+  </div>
+</div>
+<div  id="cc3" class="cc" onmouseover="slidein(cc3slide,cc3displaydiv)" onmouseout="slideout(cc3slide,cc3displaydiv)" style="position: absolute;height:20vw;top:105vw;left:52vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cc3.svg" style="width:100%" >
+  <div id="cc3slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color:#00e6e6;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cc3displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:7%;top:20%;color:#414345; " >CAREER COUNSELLING 3</span>
+  </div>
+</div>
+<div  id="cc4" class="cc" onmouseover="slidein(cc4slide,cc4displaydiv)" onmouseout="slideout(cc4slide,cc4displaydiv)" style="position: absolute;height:20vw;top:105vw;left:77vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/cc4.svg" style="width:100%" >
+  <div id="cc4slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color:#00e6e6;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="cc4displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:7%;top:20%;color:#414345;" >CAREER COUNSELLING 4</span>
+  </div>
+</div>
+<div  id="mi1" class="mi" onmouseover="slidein(mi1slide,mi1displaydiv)" onmouseout="slideout(mi1slide,mi1displaydiv)" style="position: absolute;height:20vw;top:130vw;left:3vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/mi1.svg" style="width:100%" >
+  <div id="mi1slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: #739900;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="mi1displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:16%;top:20%;color:#414345; " >MOCK INTERVIEW 1</span>
+  </div>
+</div>
+<div  id="mi2"  class="mi" onmouseover="slidein(mi2slide,mi2displaydiv)" onmouseout="slideout(mi2slide,mi2displaydiv)" style="position: absolute;height:20vw;top:130vw;left:27vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/mi2.svg" style="width:100%" >
+  <div id="mi2slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: #739900;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="mi2displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:16%;top:20%;color:#414345; " >MOCK INTERVIEW 2</span>
+  </div>
+</div>
+<div  id="mi3" class="mi" onmouseover="slidein(mi3slide,mi3displaydiv)" onmouseout="slideout(mi3slide,mi3displaydiv)" style="position: absolute;height:20vw;top:130vw;left:52vw;width: 20vw;z-index: 100;overflow: hidden;" >
+  <img src="./seconddiv/mi3.svg" style="width:100%" >
+  <div id="mi3slide" style="position: absolute;height: 20%; width: 100%;top:100%;background-color: #739900;z-index: 1; opacity: 0;" >
+    <span style="font-family:corexfont;font-size:1.3vw;position:relative;left:30%;top:25%;color:#ffffff; " >VIEW PROJECT</span>
+  </div>
+  <div id="mi3displaydiv" style="position:absolute;height:20%;  width: 100%;  top:80%;z-index: 101; background-color:rgba(245,245,245,1); " >
+    <span style="font-family:corexfont;font-size:1.5vw;position:relative;left:16%;top:20%; color:#414345;" >MOCK INTERVIEW 3</span>
+  </div>
+</div>
+<!--table-->
+  <!-- <div style="margin-top:90vw;"><hr></div>
+  <h2 style="left:20vw;top:93vw; position:absolute">Refrences</h2>
+  <hr style="top:95vw;"> -->
+      <table id="companytable"  >
+                <tr>
+                  <td style="font-size:2.2vw;color:#11151A;text-align:left " colspan="4" >References<hr></td>
+                </tr>
+
+                <tr>
+                    <td><img class="logoCom" src=" ./svg/edf.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/google.png"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-canal.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-cite-science.png"></td>
+                </tr>
+                <tr>
+                    <td><img class="logoCom" src=" ./svg/__logo-express.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-has.png"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-gdf.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-havas.svg"></td>
+                </tr>
+                <tr>
+                    <td><img class="logoCom" src=" ./svg/__logo-intersport.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-twitter.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-la-poste.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-nexity.png"></td>
+                </tr>
+                <tr>
+                    <td><img class="logoCom" src=" ./svg/__logo-opinion-way.png"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-pernod-ricard.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-orange.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-publicis.svg"></td>
+                </tr>
+                <tr>
+                    <td><img class="logoCom" src=" ./svg/__logo-rennes.svg"></td>
+                    <td><img class="logoCom" src=" ./svg/__logo-sacem.svg"></td>
+                  <td><img class="logoCom" src=" ./svg/__logo-scientific-beta.png"></td>
+
+                </tr>
+
+              </table>
+
+              <table id="companytable2" >
+                  <tr>
+                      <td style="text-align:left;font-size:2.2vw;">Recognitions & Awards<hr></td>
+                  </tr>
+                  <tr>
+                      <td><br>Best website of the year<br>__2017</br><hr></td>
+                  </tr>
+                  <tr>
+                      <td><br>Best website of the year<br>__2017</br><hr></td>
+                  </tr>
+                  <tr>
+                      <td><br>Best website of the year<br>__2017</br><hr></td>
+                  </tr>
+                  <tr>
+                      <td><br>Best website of the year<br>__2017</br><hr></td>
+                  </tr>
+                  <tr>
+                      <td><br>Best website of the year<br>__2017</br><hr></td>
+                  </tr>
+              </table>
+
+            <img src=discover.png style="position:absolute;top:213vw;width:100%;">
+            <div style="font-family:chaprral;position:absolute;top:225vw;background-color:#14151a;width:100%;height:10vw;" >
+              <ul style="margin-left:10vw;position:absolute;list-style: none;">
+                      <li>
+                          <h1 class="color1">CorEx</h1>
+                          <a href="#!/en/mentions-legales"><p  class="color2">Terms &amp; conditions</p></a>
+                          <p  class="color2">©ITWS1 FALL-2017</p>
+                        </li>
+                      </ul>
+              <ul style="margin-left:35vw;position:absolute;list-style: none;">
+                <li>
+                  <h3  class="color1">Visit Us</h3>
+                  <a href="https://www.google.com/maps/d/viewer?mid=19JTfJhly2iU5ydLGBP4sVLwWmSU&hl=en_US" target="_blank"><p  class="color2">Indian Institute of </p></a>
+                    <p class="color2">  Information Technology,<br><br>
+                        SriCity , India</p>
+                </li>
+              </ul>
+                <ul style="margin-left:55vw; position:absolute;list-style: none;">
+                  <li>
+                    <h3  class="color1">Contact Us</h3>
+                    <a href="mailto:contact@corex.com?Subject=Hey%20There!" class="color2" target="_top">contact@corex.com</a>
+                  </li>
+                </ul>
+                <ul style="margin-left:75vw;position:absolute;list-style: none;">
+                  <li>
+                  <h3 class="color1">Follow Us</h3>
+                  <a href="http://twitter.com" target="_blank"><p class="color2">Twitter </p></a>
+                  <a href="http://www.facebook.com" target="_blank"><p  class="color2">Facebook</p></a>
+                  <a href="http://www.linkedin.com" target="_blank"><p  class="color2">LinkedIn</p></a>
+                </li>
+              </ul>
+
+
+            </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" ></script>
+  <script>
+
+  function navdown(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'10vw'},200);
+    $("#navlogo").animate({height:'10vw'},200);
+    $(".rotating").animate({top:'-8%'},200);
+  }
+  function navup(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'5vw'},200);
+    $("#navlogo").animate({height:'5vw'},200);
+    $(".rotating").animate({top:'-50%'},200);
+  }
+  function slidein1(){
+   $("#slide1").stop();
+   $("#displaydiv1").stop();
+   $("#slide1").animate({opacity:'1',top:'85%'},200);
+   $("#displaydiv1").animate({top:'65%',backgroundColor:'rgba( 245, 245, 245 ,1 )'},200);
+ }
+ function slideout1(){
+   $("#slide1").stop();
+   $("#displaydiv1").stop();
+   $("#slide1").animate({opacity:'0',top:'100%'},200);
+   $("#displaydiv1").animate({top:'80%',backgroundColor:'rgba( 238, 205, 0 ,0.7)'},200);
+ }
+ function slidein2(){
+  $("#slide2").stop();
+  $("#displaydiv2").stop();
+  $("#slide2").animate({opacity:'1',top:'85%'},200);
+  $("#displaydiv2").animate({top:'65%',backgroundColor:'rgba( 245, 245, 245 ,1 )'},200);
+}
+function slideout2(){
+  $("#slide2").stop();
+  $("#displaydiv2").stop();
+  $("#slide2").animate({opacity:'0',top:'100%'},200);
+  $("#displaydiv2").animate({top:'80%',backgroundColor:'rgba( 0, 169, 183 ,0.7)'},200);
+}
+function slidein3(){
+ $("#slide3").stop();
+ $("#displaydiv3").stop();
+ $("#slide3").animate({opacity:'1',top:'85%'},200);
+ $("#displaydiv3").animate({top:'65%',backgroundColor:'rgba( 245, 245, 245 ,1 )'},200);
+}
+function slideout3(){
+ $("#slide3").stop();
+ $("#displaydiv3").stop();
+ $("#slide3").animate({opacity:'0',top:'100%'},200);
+ $("#displaydiv3").animate({top:'80%',backgroundColor:'rgba( 0, 230, 103 ,0.7)'},200);
+}
+function slidein(slide,displaydiv){
+ $(slide).stop();
+ $(displaydiv).stop();
+ $(slide).animate({opacity:'1',top:'80%'},200);
+ $(displaydiv).animate({top:'60%'},200);
+}
+function slideout(slide,displaydiv){
+ $(slide).stop();
+ $(displaydiv).stop();
+ $(slide).animate({opacity:'0',top:'100%'},200);
+ $(displaydiv).animate({top:'80%'},200);
+}
+function cd() {
+  $(".cd").css("display","inline");
+  $(".cd").css("top","55vw");
+  $("#companytable").css("top","80vw");
+  $("#companytable2").css("top","80vw");
+  $(".sw").css("display","none");
+  $(".cc").css("display","none");
+  $(".mi").css("display","none");
+}
+function sw() {
+  $(".sw").css("display","inline");
+  $(".sw").css("top","55vw");
+  $("#companytable").css("top","80vw");
+  $("#companytable2").css("top","80vw");
+  $(".cd").css("display","none");
+  $(".cc").css("display","none");
+  $(".mi").css("display","none");
+}
+function cc() {
+  $(".cc").css("display","inline");
+  $(".cc").css("top","55vw");
+  $("#companytable").css("top","80vw");
+  $("#companytable2").css("top","80vw");
+  $(".sw").css("display","none");
+  $(".cd").css("display","none");
+  $(".mi").css("display","none");
+}
+function mi() {
+
+  $(".mi").css("display","inline");
+  $(".mi").css("top","55vw");
+  $("#companytable").css("top","80vw");
+  $("#companytable2").css("top","80vw");
+  $(".sw").css("display","none");
+  $(".cc").css("display","none");
+  $(".cd").css("display","none");
+}
+function allin() {
+
+
+  $(".cd").css("display","inline");
+  $(".cd").css("top","55vw");
+  $(".sw").css("top","80vw");
+  $(".cc").css("top","105vw");
+  $(".mi").css("top","130vw");
+  $("#companytable").css("top","160vw");
+  $("#companytable2").css("top","160vw");
+  $(".sw").css("display","inline");
+  $(".cc").css("display","inline");
+  $(".mi").css("display","inline");
+}
+  </script>
+
+</html>

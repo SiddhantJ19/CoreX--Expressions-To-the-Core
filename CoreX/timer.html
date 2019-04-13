@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<p>Click the button to wait 3 seconds, then alert "Hello".</p>
+<p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
+<button >Try it</button>
+
+<script>
+
+function myfunction(){
+    myfunction1();
+
+}
+function myFunction1() {
+    setInterval(image2();, 10000);
+}
+function image2() {
+    setInterval(image3();, 10000);
+}
+function image3() {
+    setInterval(image4();, 10000);
+}
+function image4() {
+    setInterval(myfunction1();, 10000);
+}
+
+</script>
+
+</body>
+</html>

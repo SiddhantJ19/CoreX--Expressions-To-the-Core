@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @font-face {
+      font-family: corexfont;
+      src: url(corexfont.woff);
+  }
+  @font-face {
+    font-family:chaprral;
+    src: url(ChaparralPro-Light.otf);
+  }
+      body {
+        margin: 0;
+      }
+      #navbar{
+        position: absolute;
+        height: 5vw;
+        width: 100%;
+        background-color:rgba(31,34,45,1);
+        color:white;
+      }
+      .navbutton{
+        position: relative;
+        top:40%;
+        font-size: 1.2vw;
+        font-family: chaprral;
+      }
+      #navlogo{
+        position: absolute;
+        height: 5vw;
+        top:0vw;
+        width: 15vw;
+        left:20vw;
+        background-color: rgba(31,34,45,1);
+        overflow:hidden;
+      }
+      @-webkit-keyframes rotating{
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 90s linear infinite;
+        -moz-animation: rotating 90s linear infinite;
+        -ms-animation: rotating 90s linear infinite;
+        -o-animation: rotating 90s linear infinite;
+        animation: rotating 90s linear infinite;
+      }
+      a.navbutton{
+        color: inherit;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+      <div id="navlogo"  >
+        <img src="corexlogo.png" style="position:absolute;width:60%;z-index:1;left:18%;top:35%">
+        <img src="logo-wheel.svg" class="rotating" style="position:absolute;width:70%;left:15%;top:-50%;overflow:hidden;" >
+      </div>
+      <a href="index.html" class="navbutton" style="left:45%;" >About</a>
+      <a href="project.html" class="navbutton" style="left:47.5%;" >Projects  </a>
+      <a href="manifesto.html" class="navbutton" style="left:50%;"  ><b>Manifesto</b> </a>
+      <a href="life6.html" class="navbutton" style="left:52.5%;" >Life  </a>
+      <a href="job.php" class="navbutton" style="left:55%;" >Jobs  </a>
+      <a href="contact.php" class="navbutton"  style="left:57.5%;" >Contact Us  </a>
+    </div>
+    <div style="position:absolute;top:0vw;width:100%;overflow:hidden;height:20vw;z-index:-1;" >
+      <img src="./manifesto/cover.png" width="100%" >
+    </div>
+    <div style="position:absolute;background-color:white;top:17vw;left:25vw;width:50%;" >
+      <span style="position:relative;font-family:corexfont;font-size:2vw;color:#414345;margin-left:9vw;top:3vw;">Are You Ready To Work With Us</span>
+
+        <p style="position:relative;top:4vw;font-family:chaprral;font-size:1.2vw;padding-left:4vw;padding-right:4vw;" >
+          <span style="font-family:corexfont;color:#ff6060;" >1 • DO YOU HAVE A TALENT?</span><br><br>
+The CorE of what we do is about identifying relevant bits of information and stories from your life to help you help yourself. For these reasons, we simply cannot start working without you...
+
+<br><br>
+  <b>The first step of our methodology consists in determining what type of talents you have at your disposal : in which repositories they fit in, whether they are consistent, and naturally, what is the story told by your experiences.</b><br><br>
+<span style="font-family:corexfont;color:#ff6060;" >2 • HAVE YOU GOT TIME?</span><br><br>
+<b>Our approach allows us to really embrace the intricacies of a talent and bring out the most from it. That means we take the time to understand your issues, your philosophy, your insecurities, to conceive the best/worst case scenarios and develop the most compelling "YOU" possible.
+</b><br><br>
+
+Creating a data visualization is a committed project that requires time. The vast majority of our projects are highly qualitative and last between 1 and 12 months.
+<br><br>
+<span style="font-family:corexfont;color:#ff6060;" >3 • ARE YOU READY TO WORK WITH US FROM THE VERY BEGINNING?</span><br><br>
+<b>Before we can refine any mockup, we must carry out an in-depth process to thoroughly understand your objectives, In the meantime, we strongly believe in associating our clients along a potential employer, taking in their feedback, requests and choices to ensure your skillset matches their expectations.</b><br><br>
+This is why, at the beginning of a project, we cannot come up with how your profile can look like.<br><br>
+<span style="font-family:corexfont;color:#ff6060;" >4 • ARE YOU READY FOR A CHALLENGE?</span><br><br>
+<b>In addition to providing tailored, refined trainings, our ambition is to help our clients rethink the way they approach work and leverage its value in life.</b><br><br>
+
+As a result, our suggestions often challenge the way clients see work: they raise awareness on the necessity to preserve a sustainable work ecosystem, and advocate the need for a business decision making process that leverages the insight of data.
+
+Beyond our time-bounded collaboration, our ambition is to prepare your company and its individuals to the upcoming era of smart work.<br><br>
+<span style="font-family:corexfont;color:#ff6060;" >5 • DID YOU TICK OUR CHECKLISTS?</span><br><br>
+<b>We invite all prospective clients to get in touch, should you simply wish to know more about our approach or submit a nascent improvisation plan.</b><br><br>
+
+Following an initial conversation, we typically invite our contacts to fill out a couple of checklists that capture some key information about the purpose and some technical details about themsleves. Answers are protected by a non-disclosure agreement.
+
+Establishing a quote for a project requires to consider the multiple variables that come into play: skilled training, and connections, complexity of working together, appropriate trainer choices, implementation and improvisation index. Those details greatly help us appreciate the size of the project as well as its duration and budget.
+
+</p>
+
+    </div>
+  <img src="./manifesto/areyouready.png" style="width:100%;position:absolute;bottom:-65vw;" >
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  function navdown(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'10vw'},200);
+    $("#navlogo").animate({height:'10vw'},200);
+    $(".rotating").animate({top:'-8%'},200);
+  }
+  function navup(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'5vw'},200);
+    $("#navlogo").animate({height:'5vw'},200);
+    $(".rotating").animate({top:'-50%'},200);
+  }
+  </script>
+</html>

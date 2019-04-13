@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LIFE</title>
+
+    <style>
+    @font-face {
+      font-family: corexfont;
+      src: url(corexfont.woff);
+  }
+  @font-face {
+    font-family:chaprral;
+    src: url(ChaparralPro-Light.otf);
+  }
+        body{
+          margin: 0;
+        }
+        #picA{
+          position:absolute;
+          left: 10vw;
+          top: 72.1vw;
+          width:39.5vw;
+          height:39.5vw;
+        }
+        #picB{
+          position:absolute;
+          left: 49.5vw;
+          top: 111.8vw;
+          width:39.4vw;
+          height:39.5vw;
+        }
+        #picC{
+          position:absolute;
+          left: 10vw;
+          top: 151.4vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picD{
+          position:absolute;
+          left: 29.7vw;
+          top: 151.4vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picE{
+          position:absolute;
+          left: 49.5vw;
+          top: 151.4vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picF{
+          position:absolute;
+          left: 69.2vw;
+          top: 151.4vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picG{
+          position:absolute;
+          left: 10vw;
+          top: 171.1vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picH{
+          position:absolute;
+          left: 29.7vw;
+          top: 171.1vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picI{
+          position:absolute;
+          left: 49.5vw;
+          top: 171.1vw;
+          width:39.5vw;
+          height:39.5vw;
+        }
+        #picJ{
+          position:absolute;
+          left: 10vw;
+          top: 190.8vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picK{
+          position:absolute;
+          left: 29.7vw;
+          top: 190.8vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picN{
+          position:absolute;
+          left: 10vw;
+          top: 210.5vw;
+          width:39.5vw;
+          height:39.7vw;
+        }
+        #picL{
+          position:absolute;
+          left: 49.5vw;
+          top: 210.5vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picM{
+          position:absolute;
+          left: 69.2vw;
+          top: 210.5vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picO{
+          position:absolute;
+          left: 49.5vw;
+          top: 230.4vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        #picP{
+          position:absolute;
+          left: 69.2vw;
+          top: 230.4vw;
+          width:19.7vw;
+          height:19.7vw;
+        }
+        .container {                    //image person hover part
+          position: absolute;
+          width:19.7vw;
+          height:19.7vw;
+        }
+
+        .image {
+        position:absolute;
+          display: block;
+          width:19.7vw;
+          height:19.7vw;
+        }
+
+        .overlay {
+          position: relative;
+          bottom: 100%;
+          width:19.7vw;
+          right: 0;
+          background-color: #00ffad;
+          opacity:0.9;
+          overflow: hidden;
+          height:0vw;
+          transition: .4s ease-out;
+        }
+
+        .container:hover .overlay {
+          bottom: 0;
+          height: 100%;
+        }
+
+        .text {
+          white-space: nowrap;
+          color: #3f3f3f;
+          font-size: 20px;
+          position: absolute;
+          overflow: hidden;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+        }
+        .color1{color:#cccccc;}
+        .color2{color:#b3b3b3;}
+        .color3{color:#5f5f5f;}
+        a:link{text-decoration:none}
+        .about{margin-top:5vw;margin-left:25vw;font-size:25px;color:white}
+        #navbar{
+          position: absolute;
+          height: 5vw;
+          width: 100%;
+          background-color:rgba(31,34,45,1);
+          color:white;
+        }
+        .navbutton{
+          position: relative;
+          top:40%;
+          font-size: 1.2vw;
+          font-family: chaprral;
+        }
+        #navlogo{
+          position: absolute;
+          height: 5vw;
+          top:0vw;
+          width: 15vw;
+          left:20vw;
+          background-color: rgba(21,20,26,0);
+          overflow:hidden;
+        }
+        @-webkit-keyframes rotating{
+          from {
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          to {
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes rotating {
+          from {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          to {
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+        .rotating {
+          -webkit-animation: rotating 90s linear infinite;
+          -moz-animation: rotating 90s linear infinite;
+          -ms-animation: rotating 90s linear infinite;
+          -o-animation: rotating 90s linear infinite;
+          animation: rotating 90s linear infinite;
+        }
+        a.navbutton{
+          color: inherit;
+          text-decoration: none;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var a2=Array('T1.jpg','T2.jpg','T3.jpg','T4.jpg','T5.jpg');
+var a1=Array('S1.jpg','S2.jpg','S3.jpg','S4.jpg','S5.jpg');
+var a3=Array('Si1.jpg','Si2.jpg','Si3.jpg','Si4.jpg','Si5.jpg');
+var a4=Array('Sh1.jpg','Sh2.jpg','Sh3.jpg','Sh4.jpg','Sh5.jpg');
+var a5=Array('P1.jpg','P2.jpg','P3.jpg','P4.jpg','P5.jpg');
+var a6=Array('Sa1.jpg','Sa2.jpg','Sa5.jpg','Sa3.jpg','Sa4.jpg');
+var a7=Array('E1.jpg','E2.jpg','E3.jpg','E4.jpg','E5.jpg');
+var b=Array('#image1','#image2','#image3','#image4','#image5','#image6','#image7');
+function myfunction()
+{
+  image1();
+  //image2();
+}
+function image1()
+{
+  var d=Math.floor(Math.random()*7);
+  var f=Math.floor(Math.random()*7);
+  var e=Math.floor(Math.random()*7);
+  var g=Math.floor(Math.random()*7);
+  if((d==0 || g==0) || (e==0 || f==0))
+    $(b[0]).attr("src",a1[Math.floor(Math.random()*5)]);
+  if((d==5 || g==5) || (e==5 || f==5))
+    $(b[5]).attr("src",a6[Math.floor(Math.random()*5)]);
+  if((d==4 || g==4)|| (e==4 || f==4))
+    $(b[4]).attr("src",a5[Math.floor(Math.random()*5)]);
+  if((d==3 || g==3) || (e==3 || f==3))
+    $(b[3]).attr("src",a4[Math.floor(Math.random()*5)]);
+  if((d==2 || g==2) || (e==2 || f==2))
+    $(b[2]).attr("src",a3[Math.floor(Math.random()*5)]);
+  if((d==1 || g==1) || (e==1 || f==1))
+    $(b[1]).attr("src",a2[Math.floor(Math.random()*5)]);
+  if((d==6 || g==6) || (e==6 || f==6))
+    $(b[6]).attr("src",a7[Math.floor(Math.random()*5)]);
+  setTimeout(image1,2000);
+}
+  function navdown(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'10vw'},200);
+    $("#navlogo").animate({height:'10vw'},200);
+    $(".rotating").animate({top:'-8%'},200);
+  }
+  function navup(){
+    $("#navbar").stop();
+    $("#navlogo").stop();
+    $(".rotating").stop();
+    $("#navbar").animate({height:'5vw'},200);
+    $("#navlogo").animate({height:'5vw'},200);
+    $(".rotating").animate({top:'-50%'},200);
+  }
+</script>
+</head>
+<body style="background-color:#12151a;" onload="myfunction();">
+  <div id="navbar" onmouseover="navdown()" onmouseout="navup()">
+    <div id="navlogo"  >
+      <img src="corexlogo.png" style="position:absolute;width:60%;z-index:1;left:18%;top:35%">
+      <img src="logo-wheel.svg" class="rotating" style="position:absolute;width:70%;left:15%;top:-50%;overflow:hidden;" >
+    </div>
+    <a href="index.html" class="navbutton" style="left:45%;" >About</a>
+    <a href="project.html" class="navbutton" style="left:47.5%;" >Projects</a>
+    <a href="manifesto.html" class="navbutton" style="left:50%;"  >Manifesto </a>
+    <a href="life6.html"  class="navbutton" style="left:52.5%;" ><b>Life</b>  </a>
+    <a href="job.php" class="navbutton" style="left:55%;" >Jobs  </a>
+    <a href="contact.php" class="navbutton"  style="left:57.5%;" >Contact Us  </a>
+  </div>
+  <img style="width:98.85vw;height:50vw;" src=Orijnalteam.jpg>
+  <div class="about" >
+    <pre style="font-family:chaprral;"  ><br>
+      The Corex team consists of passionate people that constantly mix a wide range of skills:
+                    storytelling, information architecture, statistics, user experience, etc.
+    </pre>
+  </div>
+  <img id="picA" class="sepia" src="I.jpg">
+  <img id="picB" class="sepia" src="K.jpg">
+  <img id="picC" class="sepia" src="P.jpg">
+  <img id="picD" class="sepia" src="J.jpg">
+  <img id="picE" class="sepia" src="E.jpg">
+  <img id="picF" class="sepia" src="F.jpg">
+  <img id="picG" class="sepia" src="G.jpg">
+  <img id="picH" class="sepia" src="H.jpg">
+  <img id="picI" class="sepia" src="A.jpg">
+  <img id="picJ" class="sepia" src="D.jpg">
+  <img id="picK" class="sepia" src="N.jpg">
+  <img id="picN" class="sepia" src="B.jpg">
+  <img id="picL" class="sepia" src="L.jpg">
+  <img id="picM" class="sepia" src="M.jpg">
+  <img id="picO" class="sepia" src="O.jpg">
+  <img id="picP" class="sepia" src="C.jpg">
+
+  <div class="container" style="margin-left:49.5vw;margin-top:8.4vw;">
+    <img src="S1.jpg" alt="Avatar" class="image" id="image1">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text"><strong>Sailesh Meegada</strong><br>CFO<br><br><a href="http://facebook.com/deep.fried.potato"><p class="color3">@deepFriedPoteto</p></a></div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-left:69.2vw;margin-top:-19.7vw;">
+    <img src="T1.jpg" alt="Avatar" class="image" id="image2">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text"><strong>Tanay Rathore</strong><br>Knowledge Partner<br><br><a href="http://facebook.com/c60carbon"><p class="color3">@iAmAbrexius</p></a></div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-left:69.2vw;margin-top:0vw;">
+    <img src="Si1.jpg" alt="Avatar" class="image" id="image3">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text"><strong>Siddhant Jain</strong><br>Incident Handler<br><br><a href="http://facebook.com/siddhantholia19"><p class="color3">@midasTouch</p></a></div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-left:49.5vw;margin-top:-19.7vw;">
+    <img src="Sh1.jpg" alt="Avatar" class="image" id="image4">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text" ><strong>Shubh Vanavat</strong><br>End-User Associate<br><br><a href="http://facebook.com/veg.mocchi"><p class="color3">@dryFruitTerrorist</p></a></div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="margin-left:10vw;margin-top:0.2vw;">
+    <img src="P1.jpg" alt="Avatar" class="image" id="image5">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text"><strong>Parth Patwa</strong><br>Senior Analyst<br><br><a href="http://facebook.com/ckicken65"><p class="color3">@parth2Success</p></a></div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-left:29.7vw;margin-top:-19.7vw;">
+    <img src="Sa1.jpg" alt="Avatar" class="image" id="image6">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text"><strong>Saurabh Petkar</strong><br>Quality Assurance<br><br><a href="http://facebook.com/saurabh.petkar11"><p class="color3">@alphaPHP</p></a></div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-left:10vw;margin-top:0.1vw;">
+    <img src="E1.jpg" alt="Avatar" class="image" id="image7">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text"><strong>Eshaan Sihag</strong><br>Talent Tarnishing<br><br><a href="http://facebook.com/issa.new.species"><p class="color3">@vegMocchiChips</p></a></div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-left:29.7vw;margin-top:-19.7vw;background-color:White">
+  <img src="Q1.jpg" alt="Avatar" class="image">
+    <div class="overlay" style="top:0.0vw;">
+      <div class="text"><strong>This Could be You!</strong><br><br><br><a href="http://facebook.com/deep.fried.potato"><p class="color3"><b>JOIN US</b></p></a></div>
+    </div>
+    </div>
+  </div>
+
+  <img src="parallax.png" style="margin-top:99vw;width:100vw;">
+
+
+  <div style="font-family:chaprral;" >
+    <ul style="margin-left:10vw;position:absolute;list-style: none;">
+            <li>
+                <h1 class="color1">CorEx</h1>
+                <a href="#!/en/mentions-legales"><p  class="color2">Terms &amp; conditions</p></a>
+                <p  class="color2">©ITWS1 FALL-2017</p>
+              </li>
+            </ul>
+    <ul style="margin-left:35vw;position:absolute;list-style: none;">
+      <li>
+        <h3  class="color1">Visit Us</h3>
+        <a href="https://www.google.com/maps/d/viewer?mid=19JTfJhly2iU5ydLGBP4sVLwWmSU&hl=en_US" target="_blank"><p  class="color2">Indian Institute of </p></a>
+          <p class="color2">  Information Technology,<br><br>
+              SriCity , India</p>
+      </li>
+    </ul>
+      <ul style="margin-left:55vw; position:absolute;list-style: none;">
+        <li>
+          <h3  class="color1">Contact Us</h3>
+          <a href="mailto:contact@corex.com?Subject=Hey%20There!" class="color2" target="_top">contact@corex.com</a>
+        </li>
+      </ul>
+      <ul style="margin-left:75vw;position:absolute;list-style: none;">
+        <li>
+        <h3 class="color1">Follow Us</h3>
+        <a href="http://twitter.com" target="_blank"><p class="color2">Twitter </p></a>
+        <a href="http://www.facebook.com" target="_blank"><p  class="color2">Facebook</p></a>
+        <a href="http://www.linkedin.com" target="_blank"><p  class="color2">LinkedIn</p></a>
+      </li>
+    </ul>
+
+
+  </div>
+
+</body>
+<html>
